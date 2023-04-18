@@ -27,7 +27,18 @@ function userPrompt(){
 
 
 // TODO: Create a function to write README file
+function writeToFile(fileName, data) {
+    const dir = './generated-readmes';
 
+    if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir);
+    }
+
+    fs.writeFile(fileName, data, (error) => {
+        if (error) throw error;
+        console.log(`File ${fileName} has been saved!`);
+    });
+}
 
 
 

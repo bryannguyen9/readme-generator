@@ -1,4 +1,4 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
 const inquirer = require('inquirer');
 
 
@@ -16,7 +16,7 @@ const questions = [
     {name: 'test', message: 'Please enter test instructions:', type: 'input'}
   ];
 
-// TODO: function to use .prompt in order to ask user questions array
+// function to use .prompt in order to ask user questions array
 function userPrompt(){
     inquirer.prompt(questions)
     .then((answers) => {
@@ -26,7 +26,7 @@ function userPrompt(){
 }
 
 
-// TODO: Create a function to write README file
+// function to write README file
 function writeToFile(fileName, data) {
     const dir = './generated-readmes';
 
@@ -40,7 +40,45 @@ function writeToFile(fileName, data) {
     });
 }
 
+// function to format readme markdown
+function generateMarkdown(data) {
+    return `
+    # ${data.title}
 
+    ## Description
+    ${data.description}
+
+    ## Table of Contents
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [License](#license)
+    - [Contributors](#contributors)
+    - [Resources](#resources)
+    - [Contribution Guidelines](#contribution-guidelines)
+    - [Tests](#tests)
+
+    ## Installation
+    ${data.installation}
+
+    ## Usage
+    ${data.usage}
+
+    ## License
+    This project is licensed under the ${data.license} license.
+
+    ## Contributors
+    ${data.contributors}
+
+    ## Resources
+    ${data.resources}
+
+    ## Contribution Guidelines
+    ${data.contribution}
+
+    ## Tests
+    ${data.test}
+    `;
+}
 
 // TODO: Create a function to initialize app
 function init() {

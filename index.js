@@ -82,7 +82,7 @@ function generateMarkdown(data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    
+    userPrompt();
 }
 
 // Function call to initialize app

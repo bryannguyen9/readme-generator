@@ -14,7 +14,9 @@ const questions = [
     {name: 'contributors', message: 'Please enter contributors:', type: 'input'},
     {name: 'resources', message: 'Please enter relevant resources used:', type: 'input'},
     {name: 'contribution', message: 'Please enter Contribution guidelines:', type: 'input'},
-    {name: 'test', message: 'Please enter test instructions:', type: 'input'}
+    {name: 'test', message: 'Please enter test instructions:', type: 'input'},
+    {name: 'questionsGithub', message: 'Please input your github username: ', type: 'input'},
+    {name: 'questionsEmail', message: 'Please input your email for users to contact you at: ', type: 'input'}
   ];
 
 // function to use .prompt in order to ask user questions array
@@ -57,6 +59,7 @@ ${data.description}
 - [Resources](#resources)
 - [Contribution Guidelines](#contribution-guidelines)
 - [Tests](#tests)
+- [Questions](#questions)
 
 ## Installation
 ${data.installation}
@@ -78,6 +81,10 @@ ${data.contribution}
 
 ## Tests
 ${data.test}
+
+## Questions
+* My github profile: [github.com/${data.questionsGithub}](https://github.com/${data.questionsGithub}/)
+* For further questions or to get in touch: [${data.questionsEmail}](${data.questionsEmail})
 `;
 }
 

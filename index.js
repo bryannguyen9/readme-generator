@@ -17,7 +17,13 @@ const questions = [
   ];
 
 // TODO: function to use .prompt in order to ask user questions array
-
+function userPrompt(){
+    inquirer.prompt(questions)
+    .then((answers) => {
+        console.log('You typed: ', answers);
+        writeToFile("./generated-readmes/README.md", generateMarkdown(answers));
+    });
+}
 
 
 // TODO: Create a function to write README file

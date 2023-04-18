@@ -22,7 +22,7 @@ function userPrompt(){
     inquirer.prompt(questions)
     .then((answers) => {
         console.log('You typed: ', answers);
-        writeToFile("./generated-readmes/README.md", generateMarkdown(answers));
+        writeToFile("./generated-readmes/generatedREADME.md", generateMarkdown(answers));
     });
 }
 
@@ -44,41 +44,41 @@ function writeToFile(fileName, data) {
 // function to format readme markdown
 function generateMarkdown(data) {
     return `
-    # ${data.title}
+# ${data.title}
 
-    ## Description
-    ${data.description}
+## Description
+${data.description}
 
-    ## Table of Contents
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Contributors](#contributors)
-    - [Resources](#resources)
-    - [Contribution Guidelines](#contribution-guidelines)
-    - [Tests](#tests)
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributors](#contributors)
+- [Resources](#resources)
+- [Contribution Guidelines](#contribution-guidelines)
+- [Tests](#tests)
 
-    ## Installation
-    ${data.installation}
+## Installation
+${data.installation}
 
-    ## Usage
-    ${data.usage}
+## Usage
+${data.usage}
 
-    ## License
-    This project is licensed under the ${data.license} license.
+## License
+This project is licensed under the ${data.license} license.
 
-    ## Contributors
-    ${data.contributors}
+## Contributors
+${data.contributors}
 
-    ## Resources
-    ${data.resources}
+## Resources
+${data.resources}
 
-    ## Contribution Guidelines
-    ${data.contribution}
+## Contribution Guidelines
+${data.contribution}
 
-    ## Tests
-    ${data.test}
-    `;
+## Tests
+${data.test}
+`;
 }
 
 // TODO: Create a function to initialize app

@@ -1,6 +1,7 @@
 // Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const markdown = require('./utils/generateMarkdown.js');
 
 
 // Creates an array of questions for user input
@@ -24,12 +25,14 @@ function userPrompt(){
     inquirer.prompt(questions)
     .then((answers) => {
         console.log('You typed: ', answers);
-        writeToFile("./generated-readmes/generatedREADME.md", generateMarkdown(answers));
+        
+        // calls writeToFile function and passes answers into the imported generateMarkdown function from generateMarkdown.js
+        writeToFile("./generated-readmes/generatedREADME.md", markdown.generateMarkdown(answers));
     });
 }
 
 
-// function to write README file
+// function to create readme directory and write README file
 function writeToFile(fileName, data) {
     const dir = './generated-readmes';
 
@@ -43,52 +46,7 @@ function writeToFile(fileName, data) {
     });
 }
 
-// function to format readme markdown
-function generateMarkdown(data) {
-    return `
-# ${data.title}
-
-## Description
-${data.description}
-
-## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Contributors](#contributors)
-- [Resources](#resources)
-- [Contribution Guidelines](#contribution-guidelines)
-- [Tests](#tests)
-- [Questions](#questions)
-
-## Installation
-${data.installation}
-
-## Usage
-${data.usage}
-
-## License
-This project is licensed under the ${data.license} license.
-
-## Contributors
-${data.contributors}
-
-## Resources
-${data.resources}
-
-## Contribution Guidelines
-${data.contribution}
-
-## Tests
-${data.test}
-
-## Questions
-* My github profile: [github.com/${data.questionsGithub}](https://github.com/${data.questionsGithub}/)
-* For further questions or to get in touch: [${data.questionsEmail}](${data.questionsEmail})
-`;
-}
-
-// TODO: Create a function to initialize app
+// initializer function to initialize app
 function init() {
     userPrompt();
 }

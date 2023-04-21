@@ -60,7 +60,7 @@ function writeToFile(fileName, data) {
 
 ## Usage
 
-Here is a video link to show what a user might encounter when using the readme generator properly:
+### Here is a video link to show what a user might encounter when using the readme generator properly:
 [Example Application Usage](https://watch.screencastify.com/v/8IJRy6DFkgXexq2oft9Z)
 
 Here you can see how I access the terminal within VS Code:

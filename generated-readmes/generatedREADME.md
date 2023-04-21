@@ -1,10 +1,10 @@
 
-# readme generator
+# Readme Generator
 
 ## Description
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-blahblahblabha
+This project will generated a readme for you before your very eyes!
 
 
 
@@ -19,44 +19,52 @@ blahblahblabha
 - [Questions](#questions)
 
 ## Installation
-ablalbalbalbalbab
+clone down my github repo, install node.js, open terminal in vs code and enter 'node index.js',enter user prompts, and look in the generated-readmes folder
 
 ## Usage
-blabalbalbalbalba
+Please refer to the gifs and images below for usage details
 
 ## License
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This project is licensed under the Apache License 2.0.
+This project is licensed under the MIT License.
 
-Copyright [2023] [bryan nguyen]
+MIT License
 
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
- 
-        [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
- 
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+    Copyright (c) [2023] [Bryan Nguyen]
+    
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+    
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+    
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
 
-For further details on the Apache License 2.0 you can click on this link: [Link to Apache 2.0 License Details](http://www.apache.org/licenses/LICENSE-2.0)
+For further details on the MIT License you can click on this link: [Link to MIT License Details](https://opensource.org/license/mit/)
 
 
 ## Contributors
-albalbablalbalbalb
+David Chung and Myself
 
 ## Resources
-ablablbalblalb
+W3Schools, Mozilla Developer, Opensource, Stack Overflow
 
 ## Contribution Guidelines
-balbalblablaabl
+Please see the bottom of my readme to learn contact details and further information on how to contribute
 
 ## Tests
-balbalblablablab
+no testing has been done thus far
 
 ## Questions
 * My github profile: [https://github.com/bryannguyen9](https://github.com/bryannguyen9/)
